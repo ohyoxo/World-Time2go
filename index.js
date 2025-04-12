@@ -5,7 +5,7 @@ const path = require("path");
 const axios = require("axios");
 const moment = require("moment-timezone");
 const { exec } = require("child_process");
-const FILE_PATH = process.env.FILE_PATH || "./tmp";
+const FILE_PATH = process.env.FILE_PATH || "/tmp";
 const PORT = process.env.SERVER_PORT || process.env.PORT || 3000;
 
 if (!fs.existsSync(FILE_PATH)) {
